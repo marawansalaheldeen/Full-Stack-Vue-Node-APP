@@ -4,7 +4,8 @@
   "description": "\"poster-app\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/marawansalaheldeen/Full-Stack-Vue-Node-APP/issues"
   },
-  "homepage": "https://github.com/marawansalaheldeen/Full-Stack-Vue-Node-APP#readme"
+  "homepage": "https://github.com/marawansalaheldeen/Full-Stack-Vue-Node-APP#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6",
+    "nodemon": "^2.0.2"
+  }
 }
