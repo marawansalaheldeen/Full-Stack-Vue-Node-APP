@@ -7,8 +7,8 @@ app.use(bodyParser.json())
 app.use(cros())
 
 const posts = require('./routes/api/posts')
-app.use('/posts',posts)
-
+app.use('/',posts)
+//app.use('/',posts)
 const port = process.env.PORT || 3000
 
 app.listen(port,()=>{console.log(`server run on port ${port}`)})
